@@ -1,0 +1,30 @@
+Jan Tanja
+3-27-2018
+
+Project 2 Answers to Questions
+
+1. a. The ratio of hits to misses 48:16 -- 3 hits for every miss.
+   b. 3:1 hits.
+   c. 47 hits to 17 misses
+   d. Same as c. The fully associative has the same hit to miss ratio as the direct-mapped cache
+   e. The results are not surprising because the array is stored in contiguous memory, and
+      thus a fully associative cache cannot be utilized entirely. 
+
+2. A write-back cache will indicate a block as dirty when the cache is modified and memory is unchanged. 
+   On the other hand, a write-through cache will immediately change new data from cache to memory. 
+   
+   A write-back is preferable over write-through when doing writes because 
+   we don’t always have to access memory for each write, and there would be a lot of overhead.
+   A write-through is preferable over write-back when we are reading because 
+   we don’t always have to access memory constantly, and overhead would also be prominent.
+
+3. A 2-way set associative cache will outperform a fully-associate cache when cache size is small. 
+   There is lower latency for each access in a 2-way cache.
+   Rather, a fully associative cache will be more appropriate in most other situations.
+
+4. l2 cache is called every time there is a L1 hit. 
+   If there is a L1 cache miss, we correspondingly check L2 for a hit. In the event that there is one, we commit 
+   L1 cache. 
+
+5. The input to accessMemory() might include more ways to access the virtual memory such as another table,
+   however the output of the cache contents will still be the same. 
